@@ -1,0 +1,17 @@
+.SubmitButton {
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: 2px solid lightgray;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: transparent;
+    color: lightgray;
+    border-left: none;
+}
+
+.SubmitButton:hover {
+    border-color: white;
+    color:white;
+}

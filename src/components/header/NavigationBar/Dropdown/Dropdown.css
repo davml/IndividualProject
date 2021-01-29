@@ -1,0 +1,30 @@
+.dropdown {
+    background: black;
+    width: 200px;
+    position: absolute;
+    z-index: 1000;
+    top:10vh;
+    list-style: none;
+    text-align: start;
+}
+
+.dropdown-list {
+    background: rgb(22, 22, 22);
+    cursor: pointer;
+    color: lightgray;
+}
+
+.dropdown-list:hover {
+    background: rgb(28,28,28);
+    color: white;
+}
+
+.dropdown-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    padding: 16px;
+}
+

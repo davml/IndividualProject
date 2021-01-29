@@ -1,0 +1,56 @@
+.navbar {
+    background: black;
+    height: 12vh;
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .logo {
+    align-self: center;
+    margin-left: 5vh;
+    cursor: pointer;
+}
+
+.navbar .navmenu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 20px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.navmenu:active {
+    color: white;
+}
+
+.navmenu .navitem {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.navitem .navlink {
+    color: lightgray;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.navitem .navlink:hover {
+    color: white;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+.navitem .SearchForm {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0px;
+    height:60%;
+}
+
+
