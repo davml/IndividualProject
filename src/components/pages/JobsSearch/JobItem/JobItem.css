@@ -1,0 +1,30 @@
+.item-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+}
+
+.job-item {
+    width:100%;
+    height:100%;
+    padding: 3%;
+
+    
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+}
+
+.job-info {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 2%;
+}
+
+.job-heading {
+    width: 100%;
+    height: 15%;
+    font-family: 'Nunito' sans-serif;
+    font-size: 1.2em;
+    border-bottom: 2px solid black;
+}
