@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import classes from './SignUpModal.css';
+import classes from './AccountModal.css';
 import ReactDom from 'react-dom';
 import img from '../../../../assets/images/freelancegir.jpg';
 import oytimg from '../../../../assets/images/onyourterms.png'

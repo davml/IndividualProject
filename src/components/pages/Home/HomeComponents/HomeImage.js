@@ -2,15 +2,17 @@ import React, { useState } from 'react';
 import homeImage from '../../../../assets/images/imac.jpg';
 import classes from '../Home.css';
 import AccountModal from './AccountModal';
-import { AuthProvider } from '../../../../contexts/AuthContext';
+import { useAuth } from '../../../../contexts/AuthContext';
 
 const HomeImage = (props) => {
     const session = props.session;
 
+    const { currentUser } = useAuth()
+
     const [modal, setModal] = useState(false);
     const toggleModal = () => setModal(!modal);
 
-    if (session){
+    if (currentUser){
         return (
             <div className={classes["img-container"]}>
                 <img src={homeImage} className={classes["home-image"]}/>
