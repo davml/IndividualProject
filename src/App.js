@@ -6,6 +6,7 @@ import Footer from './components/footer/Footer';
 import Home from './components/pages/Home/Home';
 import About from './components/pages/About/About';
 import JobsSearch from './components/pages/JobsSearch/JobsSearch';
+import { AuthProvider } from './contexts/AuthContext';
 
 function App() {
 
@@ -16,12 +17,14 @@ function App() {
     <div className="container">
       <div className="content-wrap">
         <Router>
-          <NavBar session={session} toggle={toggleSession}/>
-          <Switch>
-            <Route path='/' exact component={Home} />
-            <Route path='/about' exact component={About} />
-            <Route path='/search' exact component={JobsSearch}/>
-          </Switch>
+          <AuthProvider>
+            <NavBar session={session} toggle={toggleSession}/>
+            <Switch>
+              <Route path='/' exact component={Home} />
+              <Route path='/about' exact component={About} />
+              <Route path='/search' exact component={JobsSearch}/>
+            </Switch>
+          </AuthProvider>
         </Router>
       </div>
     </div>

@@ -101,7 +101,6 @@
     position: absolute;
     top: 10%;
     left:10vh;
-    z-index: 0;
 }
 
 .img-container .img-signup {
@@ -158,26 +157,3 @@
     font-size: large;
 }
 
-
-
-
-.modal {
-    box-sizing: border-box;
-    align-self: center;
-    width: 50vw;
-    height: 50vh;
-    background-color: black;
-    z-index: 1;
-    position: relative;
-}
-
-
-
-.modal {
-    position: fixed;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: black;
-    z-index: 1000;
-}
